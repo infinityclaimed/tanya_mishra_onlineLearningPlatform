@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHIZO - Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+    background: linear-gradient(to bottom, #DDFFF7, #FFA69E);
+            color: #333;
+        }
+
+        header {
+            color:#115E59;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    color: #115E59;
+}
+
+.languages-icon {
+    color: #0D9488;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+   
+}
+
+.nav-links a {
+    background: none;
+    border: none;
+    color: #115E59;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #134E4A;
+}
+
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            color: #FFA69E;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .course-section {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .course-card {
+            background-color: white;
+            border: 2px solid #FFA69E;
+            border-radius: 8px;
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .course-card h3 {
+            color: #FFA69E;
+        }
+
+        .course-card img {
+            max-width: 200px;
+            margin-top: 10px;
+        }
+
+        .course-card:hover
+        {
+               transform: translateY(-1 px);
+               box-shadow: 0 12px 24px  rgb(87, 83, 83);
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <nav>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="languages-icon">
+                    <path d="m5 8 6 6"/>
+                    <path d="m4 14 6-6 2-3"/>
+                    <path d="M2 5h12"/>
+                    <path d="M7 2h1"/>
+                    <path d="m22 22-5-10-5 10"/>
+                    <path d="M14 18h6"/>
+                </svg>
+                <span>ARCHIZO</span>
+            </div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+        <h1>Welcome to ARCHIZO</h1>
+    </header>
+
+    <div class="hero">
+        <h2>Learn French and Korean</h2>
+        <p>Discover our courses to master these beautiful languages.</p>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center;">Premium Courses</h2>
+        <div class="course-section">
+            <div class="course-card">
+                <h3>French Mastery</h3>
+                <p>Advance your French skills with expert lessons.</p>
+                <img src="https://as2.ftcdn.net/v2/jpg/05/64/41/53/1000_F_564415342_irC1IMHRdFQdlaWT8Uaw8hFmO7nmONyd.jpg" alt="Baby Elephant">
+            </div>
+            <div class="course-card">
+                <h3>Korean Mastery</h3>
+                <p>Immerse yourself in Korean with premium content.</p>
+                <img src="data:image/jpeg;base64,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" alt="Baby Koala">
+            </div>
+        </div>
+
+        <h2 style="text-align: center;">Free Courses</h2>
+        <div class="course-section">
+            <div class="course-card">
+                <h3>French Basics</h3>
+                <p>Learn the basics of French for free.</p>
+                <img src="https://img.freepik.com/premium-photo/super-cute-little-baby-elephant-rendered-style-pixar-cartoon-generative-ai_808510-443.jpg" alt="Baby Elephant">
+            </div>
+            <div class="course-card">
+                <h3>Korean Basics</h3>
+                <p>Get started with Korean through our free course.</p>
+                <img src="https://img.freepik.com/premium-photo/cartoon-illustration-adorable-baby-koala-ai-generative_1009902-21511.jpg" alt="Baby Koala">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ARCHIZO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

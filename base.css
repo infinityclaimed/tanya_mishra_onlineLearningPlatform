@@ -1,0 +1,88 @@
+/* Base styles */
+:root {
+    --color-primary: #0D9488;
+    --color-primary-dark: #0F766E;
+    --color-primary-light: #F0FDFA;
+    --color-text: #115E59;
+    --color-text-dark: #134E4A;
+    --gradient-start: #DDFFF7;
+    --gradient-end: #FFA69E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover
+{
+    color: var(--color-primary);
+}
+
+.cta-button {
+    /* background-color: var(--color-primary); */
+    color:var(--color-text);
+    /* padding: 0.2rem 1.5rem; */
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    color: var(--color-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links a:not(.cta-button) {
+        display: none;
+    }
+}

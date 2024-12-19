@@ -1,0 +1,169 @@
+/* About Page Styles */
+
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+.about-hero .subtitle {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    text-align: left;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.rounded-image {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Spirit Guides Section */
+.spirit-guides {
+    margin: 6rem 0;
+}
+
+.spirit-guides h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: 3rem;
+}
+
+.guides-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.guide-card {
+    flex: 1;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.guide-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.guide-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.guide-content {
+    padding: 2rem;
+}
+
+.guide-content h3 {
+    font-size: 1.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.guide-title {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Values Section */
+.values {
+    margin: 6rem 0;
+}
+
+.values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-text-dark);
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+    width: 4rem;
+    height: 4rem;
+    background: var(--color-primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+.value-card h3 {
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .guides-container {
+        flex-direction: column;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
